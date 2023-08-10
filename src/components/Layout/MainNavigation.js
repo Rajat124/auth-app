@@ -22,7 +22,6 @@ const MainNavigation = () => {
               <Link to="/auth">Login</Link>
             </li>
           )}
-
           {isLoggedIn && (
             <li>
               <Link to="/profile">Profile</Link>
