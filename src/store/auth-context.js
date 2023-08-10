@@ -7,12 +7,8 @@ export const AuthContext = () => {
 };
 
 const Context = (props) => {
-  const [token, setToken] = useState(null);
-
-  useEffect(() => {
-    const tok = localStorage.getItem("token");
-    setToken(tok);
-  }, []);
+  const intialtoken = localStorage.getItem("token");
+  const [token, setToken] = useState(intialtoken);
 
   const usersIsLoggedIn = !!token;
 
